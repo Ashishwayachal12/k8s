@@ -1,0 +1,45 @@
+kind: CustomResourceDefinition
+apiVersion: apiextensions.k8s.io/v1
+metadata:
+  name: devopsheroes.ashishwayachal.com
+spec:
+  group: ashishwayachal.com
+  names: 
+    plural: devopsheroes
+    singular: devopshero
+    kind: DevopsHero
+    shortNames:
+      - micro
+      - zero
+      - tesla
+
+  scope: Namespaced
+  versions:
+  - name: v1
+    served: true
+    storage: true
+    schema:
+      openAPIV3Schema:
+        type: object
+        properties:
+           spec:
+             type: object
+             properties: 
+                name:
+                  type: string
+                  description: "This is the name of the Devops Heroes"
+                duration:
+                  type: string
+                  description: "This is  the duration of the Devops Heroes"
+                mode:
+                  type: string
+                  description: "This is the mode of the work eg. Workfromhome/Office"
+                platform:
+                  type: string
+                  description: "This is the linux platform of the heroes"
+
+
+
+
+
+

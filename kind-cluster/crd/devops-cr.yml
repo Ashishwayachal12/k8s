@@ -1,0 +1,9 @@
+kind: DevopsHero
+apiVersion: ashishwayachal.com/v1
+metadata:
+  name: zeronoone
+spec:
+  name: Devops-zero To Heroes
+  duration: 3 months from 25th  january 2025
+  platform: ashishwayachal.com
+  mode: Linux
